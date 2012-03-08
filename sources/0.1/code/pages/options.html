@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>Script Injector</title>
+
+        <script type="text/javascript" src="../vendor/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="../vendor/jquery.json-2.3.min.js"></script>
+        <script type="text/javascript" src="../vendor/jquery-ui-1.8.17.custom.min.js"></script>
+        <script type="text/javascript" src="../vendor/codemirror-2.21/codemirror.js"></script>
+        <script type="text/javascript" src="../vendor/codemirror-2.21/mode/css/css.js"></script>
+        <script type="text/javascript" src="../vendor/codemirror-2.21/mode/javascript/javascript.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="../vendor/codemirror-2.21/codemirror.css">
+        <link rel="stylesheet" type="text/css" href="../vendor/codemirror-2.21/theme/eclipse.css">
+
+        <script type="text/javascript" src="../javascript/commons/d4w.js"></script>
+        <script type="text/javascript" src="../javascript/content/main.js"></script>
+        <script type="text/javascript" src="../javascript/content/options.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
+        <link rel="stylesheet" type="text/css" href="../stylesheets/chrome.css">
+        <link rel="stylesheet" type="text/css" href="../stylesheets/options.css">
+
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Script Injector</h1>
+        </header>
+
+        <section>
+            <h2>Manage scripts</h2>
+            <div class="content">
+                <div class="buttons">
+                    <button type="button" data-action="new-script">Create a new script</button>
+                </div>
+                <div id="scripts"></div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Manage rules</h2>
+            <div class="content">
+                <div class="field">
+                    <select id="rules">
+                        <option value="">-- Select a rule or create one --</option>
+                        <option value="add">Create a new rule</option>
+                        <optgroup label="Existing rules"></optgroup>
+                    </select>
+                    <button type="button" data-action="delete-rule">Delete this rule</button>
+                    <button type="button" data-action="save-rule"></button>
+                </div>
+
+                <div id="rule">
+                    <div class="field">
+                        <label for="rule-name">Name of the rule:</label>
+                        <input type="text" id="rule-name">
+                    </div>
+                    <div class="field">
+                        <label for="rule-url">URL (regex allowed):</label>
+                        <input type="text" id="rule-url">
+                    </div>
+                    <div id="rule-scripts">
+                        <div class="left-bar"></div>
+                        <div class="add">+ Add a script at the beginning</div>
+                        <div class="add">+ Add a script at the end</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </body>
+
+</html>

@@ -1,0 +1,24 @@
+{
+    "name": "Script Injector",
+    "version": "0.1.1",
+    "description": "Inject JavaScript and CSS into web pages.",
+    "icons": {
+        "16": "images/icon-16.png",
+        "48": "images/icon-48.png",
+        "128": "images/icon-128.png"
+    },
+    "browser_action": {
+        "default_icon": "images/icon-browser-action.png",
+        "default_title": "Inject code in this page",
+        "default_popup": "code/pages/popup.html"
+    },
+    "background_page": "code/pages/background.html",
+    "options_page": "code/pages/options.html",
+    "offline_enabled": true,
+    "permissions": [
+        "tabs",
+        "bookmarks",
+        "unlimitedStorage",
+        "*://*/*"
+    ]
+}

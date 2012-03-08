@@ -1,0 +1,187 @@
+
+header {
+    position: relative;
+    overflow: hidden;
+    background: #eaeef2;
+    border-bottom: 1px solid #c6c9ce;
+    box-shadow: inset 0 -5px 10px rgba(0, 0, 0, 0.08);
+}
+
+    header h1 {
+        position: relative;
+        margin: 30px;
+        padding: 0 0 0 35px;
+        color: #53637d;
+        text-shadow: 0 1px 0 #fff;
+        font-size: 26px;
+        font-weight: normal;
+        background: url('../../images/logo-syringe.png') no-repeat left center;
+    }
+
+section {
+    position: relative;
+    margin: 30px 30px 0 30px;
+}
+
+    section h2 {
+        position: relative;
+        margin: 0 0 25px 0;
+        padding: 0 0 5px 0;
+        border-bottom: 1px solid #eee;
+        color: #53637d;
+        text-transform: uppercase;
+        font-size: 19px;
+        font-weight: normal;
+    }
+
+    section div.content {
+        position: relative;
+    }
+
+    section div.content .table .cell[data-name='type'] {
+        color: #4273b0;
+    }
+
+li.row.ui-draggable-dragging {
+    padding: 0 0 0 8px;
+    background: -webkit-linear-gradient(right, #fff, #fff 90%, #f5f5f5);
+    border: 1px solid #b2b2b2;
+    list-style: none;
+}
+
+    li.row.ui-draggable-dragging span {
+        display: block;
+        position: relative;
+        float: left;
+        margin: 0 10px 0 0;
+        padding: 8px 25px 8px 0;
+    }
+
+    li.row.ui-draggable-dragging span[data-name='type'] {
+        color: #4273b0;
+    }
+
+    li.row.ui-draggable-dragging span[data-name='modify'],
+    li.row.ui-draggable-dragging span[data-name='delete'] {
+        display: none;
+    }
+
+div#rule-scripts {
+    position: relative;
+    overflow: hidden;
+    margin: 15px 0 0 0;
+    padding: 10px 0 10px 6px;
+}
+
+div#rule-scripts.dropping {
+    background: -webkit-linear-gradient(left, rgba(170, 190, 220, 0.4), #fff 20%, #fff);
+}
+
+    div#rule-scripts div.left-bar {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 5px;
+        background: #aabedc;
+        border: 1px solid #8faad9;
+    }
+
+    div#rule-scripts div.item, div#rule-scripts div.add {
+        position: relative;
+        overflow: hidden;
+        float: left;
+        clear: both;
+        margin: 0 0 5px 0;
+        padding: 5px 4px 5px 15px;
+        background: -webkit-linear-gradient(right, #bbcee9, #bbcee9 90%, #aabedc);
+        border: 1px solid #8faad9;
+        border-left: none;
+    }
+
+    div#rule-scripts div.add {
+        padding: 5px 8px 5px 15px;
+        background: -webkit-linear-gradient(right, #bbcee9, #bbcee9 90%, #aabedc);
+        color: rgba(0, 0, 0, 0.35);
+        cursor: pointer;
+    }
+
+    div#rule-scripts div.add:last-child {
+        margin-bottom: 0;
+    }
+
+    div#rule-scripts div.add:hover {
+        background: #aabedc;
+        color: rgba(0, 0, 0, 1);
+    }
+
+        div#rule-scripts div.item span {
+            display: block;
+            position: relative;
+            float: left;
+        }
+
+        div#rule-scripts div.item span.category {
+            margin: 1px 10px 0 0;
+            opacity: 0.5;
+        }
+
+        div#rule-scripts div.item span.name {
+            margin: 1px 10px 0 0;
+            font-weight: bold;
+        }
+
+div#rule {
+    margin: 15px 0 0 0;
+}
+
+ul.all-scripts {
+    position: relative;
+    margin: 0;
+    padding: 0 10px;
+    border: 1px solid #b2b2b2;
+    border-radius: 4px;
+    list-style: none;
+}
+
+    ul.all-scripts li {
+        position: relative;
+        overflow: hidden;
+        margin: 0;
+        padding: 10px 0;
+        border-bottom: 1px solid #e8e8e8;
+    }
+
+    ul.all-scripts li:last-child {
+        border-bottom: none;
+    }
+
+    ul.all-scripts li.featured-last {
+        border-bottom: 3px solid #b2b2b2;
+    }
+
+    ul.all-scripts li span {
+        display: block;
+        position: relative;
+        float: left;
+        margin: 1px 20px 0 0;
+    }
+
+    ul.all-scripts li input {
+        display: block;
+        position: relative;
+        float: right;
+        margin: -3px 0 0 15px;
+    }
+
+    ul.all-scripts li span.category {
+        color: #4273b0;
+    }
+
+    ul.all-scripts li span.name {
+        font-weight: bold;
+    }
+
+    ul.all-scripts li.selected {
+        background: -webkit-linear-gradient(left, rgba(66, 115, 176, 0), rgba(66, 115, 176, 0.15) 50%, rgba(66, 115, 176, 0));
+    }

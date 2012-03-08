@@ -1,0 +1,205 @@
+
+body {
+    margin: 0 0 20px 0;
+    padding: 0;
+    background: #fff;
+    cursor: default;
+    -webkit-user-select: none;
+}
+
+body, input, textarea, select {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    color: #313131;
+}
+
+/**
+ * Misc
+ */
+
+div.buttons {
+    position: relative;
+    margin: 0 0 10px 0;
+}
+
+.link {
+    color: #3f6ec2;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.link:active {
+    color: #254071;
+}
+
+select optgroup {
+    color: #b2b2b2;
+    font-style: italic;
+}
+
+select optgroup option {
+    color: #313131;
+}
+
+.CodeMirror {
+    font-size: 13px;
+}
+
+/**
+ * Table
+ */
+
+div.table {
+    position: relative;
+    overflow: hidden;
+}
+
+    div.table div.table-content {
+        position: relative;
+        float: left;
+        margin: 0;
+        padding: 0;
+        border: 1px solid #b2b2b2;
+        border-radius: 4px;
+    }
+
+        div.table div.table-content ul {
+            display: table;
+            position: relative;
+            margin: 0;
+            padding: 0;
+            border-collapse: collapse;
+            border-spacing: 0;
+            list-style: none;
+        }
+
+            div.table div.table-content ul li {
+                display: table-row;
+                position: relative;
+                margin: -1px 0 0 0;
+                border-top: 1px solid #e8e8e8;
+                border-bottom: 1px solid #e8e8e8;
+            }
+
+            div.table div.table-content ul li:first-child {
+                border-top: none;
+            }
+
+            div.table div.table-content ul li:last-child {
+                border-bottom: none;
+            }
+
+            div.table div.table-content ul li.info {
+                display: block;
+                padding: 10px 8px;
+                color: #b2b2b2;
+            }
+
+                div.table div.table-content ul li span.cell {
+                    display: table-cell;
+                    position: relative;
+                    padding: 8px 35px 8px 0;
+                    vertical-align: middle;
+                }
+
+                div.table div.table-content ul li span.cell:first-child {
+                    padding-left: 10px;
+                }
+
+                div.table div.table-content ul li span.cell:last-child {
+                    padding-right: 45px;
+                }
+
+                div.table div.table-content ul li span.cell.no-padding {
+                    padding: 0 5px 0 0;
+                }
+
+                div.table div.table-content ul li.columns span.cell {
+                    font-weight: bold;
+                    font-size: 14px;
+                }
+
+                div.table div.table-content ul li.row span.cell.button {
+                    line-height: 10px;
+                }
+/**
+ * Form field
+ */
+
+div.field {
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 5px 0;
+}
+
+    div.field * {
+        position: relative;
+        float: left;
+    }
+
+    div.field label {
+        margin: 6px 8px 0 0;
+    }
+
+    div.field input[type='text'] {
+        width: 300px;
+    }
+
+    div.field select {
+        margin: 2px 5px 0 0;
+    }
+
+/**
+ * Dialog
+ */
+
+div#dialog-overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: -webkit-radial-gradient(rgba(127, 127, 127, 0.5), rgba(127, 127, 127, 0.5) 35%, rgba(0, 0, 0, 0.7));
+}
+
+div#dialog {
+    position: fixed;
+    left: 50%;
+    top: 45%;
+    margin: -200px 0 0 0;
+    background: #fff;
+    border: 1px solid #bcc1d0;
+    box-shadow: 0 5px 80px #505050;
+}
+
+    div#dialog h3 {
+        position: relative;
+        margin: 0;
+        padding: 10px 100px 8px 15px;
+        background: -webkit-linear-gradient(#fff, #f8f8f8);
+        border-bottom: 1px solid rgba(188, 193, 208, 0.5);
+        color: #53637d;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    div#dialog div#dialog-content {
+        position: relative;
+        padding: 10px 15px 10px 15px;
+    }
+
+        div#dialog div#dialog-content .CodeMirror {
+            margin: 10px 0 0 0;
+            width: 700px;
+        }
+
+    div#dialog div#dialog-buttons {
+        position: relative;
+        padding: 12px;
+        border-top: 1px solid rgba(188, 193, 208, 0.5);
+        text-align: right;
+    }
+
+        div#dialog div#dialog-buttons .highlighted {
+            font-weight: bold;
+        }

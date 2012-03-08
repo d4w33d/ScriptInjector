@@ -1,0 +1,266 @@
+
+/**
+ * Checkbox
+ */
+
+input[type='checkbox'] {
+    -webkit-box-shadow: inset 0 1px 2px white, 0 1px 2px rgba(0, 0, 0, .2);
+    -webkit-appearance: none;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 3px;
+    background: -webkit-linear-gradient(#fafafa, #dcdcdc);
+    border-radius: 3px;
+    border: 1px solid #a0a0a0;
+    display: inline-block;
+    height: 16px;
+    margin-bottom: 0;
+    margin-top: 0;
+    position: relative;
+    top: 0;
+    vertical-align: baseline;
+    width: 16px;
+}
+
+input[type='checkbox']:disabled {
+    opacity: .75;
+}
+
+input[type='checkbox']:not(:disabled):not(:active):hover {
+    background: -webkit-linear-gradient(#fff, #e6e6e6);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+input[type='checkbox']:not(:disabled):active {
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+    background: -webkit-linear-gradient(#f0f0f0, #bebebe);
+    border: 1px solid #808080;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .25);
+}
+
+input[type='checkbox']:checked::before {
+    color: #808080;
+    content: url('../../images/checkmark.png');
+    font-size: 13px;
+    height: 16px;
+    left: 2px;
+    position: absolute;
+}
+
+/**
+ * Radio
+ */
+
+input[type='radio'] {
+  -webkit-box-shadow: inset 0 1px 2px white,
+                      0 1px 2px rgba(0, 0, 0, .2);
+  -webkit-appearance: none;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 3px;
+  -webkit-transition: border 500ms;
+  background: -webkit-linear-gradient(#fafafa, #dcdcdc);
+  border-radius: 100%;
+  border: 1px solid #a0a0a0;
+  display: inline-block;
+  height: 15px;
+  margin-bottom: 0;
+  position: relative;
+  top: 3px;
+  vertical-align: baseline;
+  width: 15px;
+}
+
+input[type='radio']:disabled {
+  opacity: .75;
+}
+
+input[type='radio']:not(:disabled):not(:active):hover {
+  background: -webkit-linear-gradient(#fff, #e6e6e6);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+input[type='radio']:not(:disabled):active {
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+  background: -webkit-linear-gradient(#f0f0f0, #bebebe);
+  border: 1px solid #808080;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .25);
+}
+
+input[type='radio']:checked::before {
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+  -webkit-margin-start: 4px;
+  background: #808080;
+  border-radius: 10px;
+  content: '';
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 400;
+  height: 5px;
+  left: 0;
+  margin-top: 4px;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  vertical-align: top;
+  width: 5px;
+}
+
+html[dir='rtl'] input[type='radio']:checked::before {
+  right: 0;
+}
+
+input[type='radio']:active:checked::before {
+  background: #606060;
+}
+
+/**
+ * Buttons
+ */
+
+button:not(.custom-appearance),
+input[type='button']:not(.custom-appearance),
+input[type='submit']:not(.custom-appearance) {
+  -webkit-border-radius: 3px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-user-select: none;
+  background: -webkit-linear-gradient(#fafafa, #f4f4f4 40%, #e5e5e5);
+  border: 1px solid #aaa;
+  color: #444;
+  font-size: inherit;
+  margin-bottom: 0;
+  min-width: 4em;
+  padding: 3px 12px;
+}
+
+button:not(.custom-appearance):hover,
+input[type='button']:not(.custom-appearance):hover,
+input[type='submit']:not(.custom-appearance):hover {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  background: #ebebeb -webkit-linear-gradient(#fefefe, #f8f8f8 40%, #e9e9e9);
+  border-color: #999;
+  color: #222;
+}
+
+button:not(.custom-appearance):active,
+input[type='button']:not(.custom-appearance):active,
+input[type='submit']:not(.custom-appearance):active {
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  background: #ebebeb -webkit-linear-gradient(#f4f4f4, #efefef 40%, #dcdcdc);
+  color: #333;
+}
+
+button[disabled]:not(.custom-appearance),
+input[type='button'][disabled]:not(.custom-appearance),
+input[type='submit'][disabled]:not(.custom-appearance),
+button[disabled]:not(.custom-appearance):hover,
+input[type='button'][disabled]:not(.custom-appearance):hover,
+input[type='submit'][disabled]:not(.custom-appearance):hover {
+  -webkit-box-shadow: none;
+  background: -webkit-linear-gradient(#fafafa, #f4f4f4 40%, #e5e5e5);
+  border-color: #aaa;
+  color: #888;
+}
+
+button:not(.custom-appearance):focus,
+input[type='submit']:not(.custom-appearance):focus,
+input[type='text']:not(.custom-appearance):focus,
+select:not(.custom-appearance):focus {
+  -webkit-box-shadow: inset 0 1px 2px white,
+      0 1px 2px rgba(0, 0, 0, .2),
+      0 0 1px #c0c0c0,
+      0 0 1px #c0c0c0,
+      0 0 1px #c0c0c0;
+  -webkit-transition: border-color 200ms;
+  border-color: #4080fa;
+  outline: none;
+}
+
+input[type='text'], input[type='password'] {
+    -webkit-border-radius: 2px;
+    border: 1px solid #AAA;
+    font-size: inherit;
+    padding: 3px;
+}
+
+/**
+ * Select
+ */
+
+select {
+  -webkit-appearance: button;
+  -webkit-border-radius: 3px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  -webkit-padding-end: 20px;
+  -webkit-padding-start: 8px;
+  -webkit-user-select: none;
+  background-image: url("../../images/select.png"),
+                    -webkit-linear-gradient(#fafafa, #f4f4f4 40%, #e5e5e5);
+  background-position: center right;
+  background-repeat: no-repeat;
+  border: 1px solid #aaa;
+  color: #555;
+  font-size: inherit;
+  margin: 0;
+  overflow: hidden;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+html[dir='rtl'] select {
+  background-position: center left;
+}
+
+select:disabled {
+  color: graytext;
+  background-image: url("../../images/disabled_select.png"),
+                    -webkit-linear-gradient(#fefefe, #f8f8f8 40%, #e9e9e9);
+}
+
+select:enabled:hover {
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  background-image: url("../../images/select.png"),
+                    -webkit-linear-gradient(#fefefe, #f8f8f8 40%, #e9e9e9);
+  color: #333;
+}
+
+select:enabled:active {
+  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  background-image: url("../../images/select.png"),
+                    -webkit-linear-gradient(#f4f4f4, #efefef 40%, #dcdcdc);
+  color: #444;
+}
+
+/**
+ * Delete button
+ */
+
+.button-delete {
+    -webkit-box-shadow: inset 0 1px 2px white, 0 1px 2px rgba(0, 0, 0, .2);
+    -webkit-appearance: none;
+    -webkit-margin-start: 0;
+    -webkit-margin-end: 3px;
+    background: url('../../images/delete.png') no-repeat center center, -webkit-linear-gradient(#fafafa, #dcdcdc);
+    border-radius: 3px;
+    border: 1px solid #a0a0a0;
+    display: inline-block;
+    height: 14px;
+    margin-bottom: 0;
+    margin-top: 0;
+    position: relative;
+    top: 0;
+    vertical-align: baseline;
+    width: 14px;
+}
+
+.button-delete:not(:active):hover {
+    background: url('../../images/delete.png') no-repeat center center, -webkit-linear-gradient(#fff, #e6e6e6);
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+}
+
+.button-delete:active {
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+    background: url('../../images/delete.png') no-repeat center center, -webkit-linear-gradient(#f0f0f0, #bebebe);
+    border: 1px solid #808080;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .25);
+}

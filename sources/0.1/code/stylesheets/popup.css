@@ -1,0 +1,39 @@
+
+body {
+    margin: 15px;
+}
+
+    h2 {
+        position: relative;
+        margin: 0 0 10px 0;
+        padding: 0 0 5px 0;
+        border-bottom: 1px solid #eee;
+        color: #53637d;
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    div.code-preview {
+        position: relative;
+        margin: 0 0 20px 0;
+        width: 650px;
+    }
+
+        div.code-preview .CodeMirror-scroll {
+            overflow: auto;
+            width: 100%;
+            height: auto;
+            max-height: 200px;
+        }
+
+    div.buttons {
+        position: relative;
+        margin: 0 0 5px 0;
+        min-width: 170px;
+        text-align: right;
+    }
+
+        div.buttons .highlighted {
+            font-weight: bold;
+        }
